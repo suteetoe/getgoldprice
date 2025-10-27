@@ -74,7 +74,7 @@ func parseBEtoCE(dateBE string) string {
 // ========== 1) HOMEPAGE DOM ==========
 // Scrapes the “Gold Price by GTA / ราคาทองตามประกาศของสมาคมค้าทองคำ” block by DOM.
 func (g *GetGoldPrice) GetLastPrice() (*Headline, error) {
-	const url = "https://www.goldtraders.or.th/"
+	const url = "https://www.goldtraders.or.th/default.aspx"
 	doc, err := fetchDoc(url)
 	if err != nil {
 		return nil, err
